@@ -1,0 +1,31 @@
+这个示例主要是从智能合约到上层的DAPP的一个demo
+下层的区块链主要是利用testrpc进行创建，如果需要手动创建区块链还是需要geth
+1.打开终端安装testrpc
+sudo npm install -g ethereumjs-testrpc
+2.继续在终端安装truffle3.2.1
+sudo npm install -g truffle@~3.2.1
+3.继续安装solc编译器
+sudo add-apt-repository ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install solc
+which solc
+4.在Desktop创建Demo文件夹
+cd Desktop
+mkdir Demo
+cd Demo
+5.在Demo中创建智能合约示例代码的目录
+truffle init webpack
+6.编译智能合约示例代码
+truffle compile
+7.打开另一个终端
+8.在新的终端下创建以太坊模拟环境（区块链）
+testrpc
+9.打开原来的终端，将编译过的智能合约示例代码部署到区块链上
+truffle migrate
+truffle test
+10.让智能合约在区块链上运行起来，至此本地主机成为可以访问区块链的一个节点
+npm run dev
+11.从本地浏览器访问区块链
+打开浏览器，输入http://localhost:8080
+
+
