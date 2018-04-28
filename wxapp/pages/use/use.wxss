@@ -1,0 +1,5 @@
+/* pages/use/use.wxss */
+
+.useticket {
+  margin-top: 100px
+}

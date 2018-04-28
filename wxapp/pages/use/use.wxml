@@ -1,0 +1,7 @@
+<!--use.wxml-->
+<view class="container">
+  <view class="voice">
+    <button type="primary" size="mini" plain='true' hover-class="button-hover" class="button-voice-play" bindtap="socketBtnTap">{{socktBtnTitle}}</button>
+    <button type="primary" size="mini" plain='true' hover-class="button-hover" class="button-voice-play" bindtap="sendMessageBtnTap">发送</button>
+  </view>
+</view>
